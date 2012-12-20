@@ -1,4 +1,4 @@
-classdef dummy_GUI < jku.matlab.system.HiddenHandle
+classdef dummy_GUI < fsf.matlab.system.HiddenHandle
     properties(Access = private)
         Handle = NaN;
     end

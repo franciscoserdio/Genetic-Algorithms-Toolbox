@@ -43,6 +43,8 @@ gaFitEvaluator = sample.features.FitnessEvaluator(inputs, target);
 
 ga = fsf.ga.GeneticAlgorithm(gaConfig, gaOps, gaFitEvaluator, gaIndFact);
 
+run fsf.ga.ui.GAUI_tracer
+
 gaGUI = sample.dummy_GUI();
 ga.addlistener('IterationEnds', @gaGUI.Plot);
 

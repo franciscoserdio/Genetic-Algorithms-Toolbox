@@ -13,7 +13,7 @@ classdef dummy_GUI < fsf.matlab.system.HiddenHandle
                 features = [features; currentBest.Features];
             end
             
-            if(isnan(this.Handle))
+            if(isequaln(this.Handle, NaN))
                 this.Handle = figure;
             end
             figure(this.Handle);
